@@ -13,3 +13,5 @@ router.get("/", function (req, res) {
 });
 
 module.exports = router;
+
+// the controlls the routes 

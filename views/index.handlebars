@@ -1,7 +1,29 @@
 <div>
  <div class="row">
      {{!-- section: the burger data with devour capabilities --}}
-     i allow you to devour the food 
+   <div class="col-md-12"> 
+       {{!-- create a loop method --}}
+       <div class="row">
+           {{!-- create a row for each burger in the database and show it here --}}
+           {{#each burger_entry}}
+           {{!-- however - if the burger has been devoured do NOT show it here --}}
+           {{#unless this.devoured}}
+
+
+<pre>
+    {{this.id}}. {{this.burger_name}}
+</pre>
+{{!-- 1. Burger One  --}}
+{{!-- 2. Burger two --}}
+
+<form>
+    <input value={{this.id}} type="text">
+    <button type="submit">Devour</button>
+</form>
+           {{/unless}}
+           {{/each}}
+       </div>
+   </div>
 
  </div>
 
