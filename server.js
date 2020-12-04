@@ -3,14 +3,15 @@ const cat = express();
 
 const PORT = process.env.PORT || 3000;
 
-
+const bodyParser = require("body-parser");
 
 // uses the static method to render the static front end files 
-// static files = basic html + css  + vanilla js
+// static files = basic css  + vanilla js
 cat.use(express.static('client'));
 
 // uses the expres urlencoded method to tranlaste all data
 cat.use(express.urlencoded({ extended: true }));
+// const urlencodedParser = bodyParser.urlencoded({ extended: true })
 
 // uses the json() - JavaScript Object Notation =formatter
 cat.use(express.json());
@@ -25,12 +26,18 @@ const thehandlebars =require("express-handlebars");
 cat.engine("handlebars", thehandlebars({defaultLayout: "main"}));
 
 // allows for you to set the iew once the engine is started 
-cat.set("view engine", "handlerbars");
+cat.set("view engine", "handlebars");
 
 // POST /login gets urlencoded bodies
 // cat.get('/', urlencodedParser, function (req, res) {
 //     res.sendFile(path.join(__dirname + "../public/index.html"));
 // })
+
+// add the routes that render the file
+const theRoutes = require("./controller/burgerControl");
+cat.use(theRoutes);
+
+
 cat.listen(PORT, ()=> {
     console.log(PORT)
 });
