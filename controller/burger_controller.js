@@ -1,7 +1,7 @@
 // this file is your new route file
 // call the express library
 const express = require("express");
-
+// const burger = require("./models/burger");
 
 // call the router method from theexpress library
 const router = express.Router();
