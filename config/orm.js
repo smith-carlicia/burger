@@ -1,4 +1,4 @@
-const connection = require("./config/connection");
+const connection = require("./connection");
 const userInput = [];
 
 function printQuestionMarks(num) {
@@ -75,4 +75,4 @@ var orm = {
 //     grabAll: function(tab)
 // }
 
-module.exports = ormExample; 
+module.exports = orm; 

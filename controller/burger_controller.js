@@ -5,11 +5,13 @@ const express = require("express");
 
 // call the router method from theexpress library
 const router = express.Router();
-
+const burger = require ("../models/burger");
 
 // create the root route - that will render index.handlebar
 router.get("/", function (req, res) {
-    res.render("index");
+   burger.all(function(burgerData){
+       res.render("index", {burger_data: burgerData})
+   })
 });
 
 module.exports = router;
