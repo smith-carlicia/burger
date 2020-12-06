@@ -34,7 +34,7 @@ cat.set("view engine", "handlebars");
 // })
 
 // add the routes that render the file
-const theRoutes = require("./controller/burgerControl");
+const theRoutes = require("./controller/burger_controller");
 cat.use(theRoutes);
 
 
