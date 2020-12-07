@@ -13,5 +13,6 @@ CREATE TABLE burgers (
     id INT NOT NULL AUTO_INCREMENT,
     burger_name varchar(75) not null ,
     devoured boolean not null default false,
+    createdAt TIMESTAMP NOT NULL,
     PRIMARY KEY (id)
 );
