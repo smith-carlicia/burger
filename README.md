@@ -23,11 +23,11 @@ This codebase is architectured to as a burger logger to take in the users input 
 
 # Credits
 
-[Bootstrap](https://getbootstrap.com/)
-[Free Pik](https://www.freepik.com/free-photo/wooden-table-product-background_4139255.htm#page=1&query=Table&position=6)
-[Medium](https://medium.com/@laurengranada/setting-up-your-heroku-site-with-jawsdb-using-sequel-pro-5af8c6cc0f9f)
-[StackOverflow](https://www.stackoverflow.com)
-[W3schools](https://www.w3schools.com/default.asp)
+* [Bootstrap](https://getbootstrap.com/)
+* [Free Pik](https://www.freepik.com/free-photo/wooden-table-product-background_4139255.htm#page=1&query=Table&position=6)
+* [Medium](https://medium.com/@laurengranada/setting-up-your-heroku-site-with-jawsdb-using-sequel-pro-5af8c6cc0f9f)
+* [StackOverflow](https://www.stackoverflow.com)
+* [W3schools](https://www.w3schools.com/default.asp)
 
 # License
 
