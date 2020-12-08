@@ -25,10 +25,10 @@ router.post("/burgers/create", function (req, res){
     })
 });
 
-router.put("/burgers/:id", function(req, res){
+router.post("/burgers/:id", function(req, res){
     burger.update(req.params.id, function(result){
         console.log(result)
-        res.sendStatus(200)
+        res.redirect("/")
     })
 })
 module.exports = router;
